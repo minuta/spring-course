@@ -1,6 +1,6 @@
-! SpringBoot actuator
+# SpringBoot Actuator Demo
 
-!!! Actuator Endpoints:
+### Actuator Endpoints:
 
 /actuator/health - Health check
 
