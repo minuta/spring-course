@@ -1,6 +1,7 @@
-!!!! SpringBoot actuator
+! SpringBoot actuator
 
-Actuator Endpoints:
+!!! Actuator Endpoints:
+
 /actuator/health - Health check
 
 /actuator/info - Application information
