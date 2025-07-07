@@ -11,11 +11,12 @@ public class DemoController {
     // private field for dependency injection
     private Coach myCoach;
 
-    // Constructor for dependency injection
+    // Setter method for dependency injection
     @Autowired
-    public DemoController(Coach myCoach) {
+    public void setMyCoach(Coach myCoach) {
         this.myCoach = myCoach;
     }
+
     // Endpoint to get the daily workout
     @GetMapping("/workout")
     public String getDailyWorkout() {
