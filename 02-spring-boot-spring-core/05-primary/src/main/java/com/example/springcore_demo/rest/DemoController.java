@@ -15,7 +15,7 @@ public class DemoController {
 
     // Constructor-based dependency injection
     @Autowired
-    public void DemoController(@Qualifier("tennisCoach") Coach myCoach) {
+    public void DemoController(Coach myCoach) {
         this.myCoach = myCoach;
     }
 
