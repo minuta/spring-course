@@ -3,6 +3,7 @@ package com.example.springcore_demo.common;
 import org.springframework.stereotype.Component;
 
 // This class implements the Coach interface and provides a specific implementation for cricket coaching.
+// Per default, this class will be a singleton bean in the Spring context.
 @Component
 public class CricketCoach implements Coach {
 
