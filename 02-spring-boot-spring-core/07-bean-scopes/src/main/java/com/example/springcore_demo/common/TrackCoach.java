@@ -3,8 +3,6 @@ package com.example.springcore_demo.common;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
-// Lazy initialization of the TrackCoach Bean
-//@Lazy
 @Component
 public class TrackCoach implements Coach {
 
