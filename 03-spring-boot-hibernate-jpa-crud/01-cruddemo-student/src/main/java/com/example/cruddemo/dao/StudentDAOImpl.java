@@ -26,4 +26,9 @@ public class StudentDAOImpl implements StudentDAO {
         // This could involve using an EntityManager or a Spring Data repository
         System.out.println("Saving student: " + student.getFirstName() + " " + student.getLastName());
     }
+
+    @Override
+    public Student findById(int id) {
+        return entityManager.find(Student.class, id);
+    }
 }
