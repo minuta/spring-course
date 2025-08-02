@@ -2,6 +2,8 @@ package com.example.cruddemo.dao;
 
 import com.example.cruddemo.entity.Student;
 
+import java.util.List;
+
 public interface StudentDAO {
 
     /**
@@ -19,5 +21,14 @@ public interface StudentDAO {
      * @return the found student, or null if no student with that ID exists
      */
     Student findById(int id);
+
+
+    /**
+     * get all Stundent entries
+     *
+     * @return a list of all Student entries
+     */
+    List<Student> findAll();
+
 
 }
