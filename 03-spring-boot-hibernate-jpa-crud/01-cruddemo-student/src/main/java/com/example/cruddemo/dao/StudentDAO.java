@@ -30,5 +30,13 @@ public interface StudentDAO {
      */
     List<Student> findAll();
 
+    /**
+     * find students by the given lastname
+     *
+     * @param lastName
+     * @return list of students
+     */
+    List<Student> findByLastName(String lastName);
+
 
 }

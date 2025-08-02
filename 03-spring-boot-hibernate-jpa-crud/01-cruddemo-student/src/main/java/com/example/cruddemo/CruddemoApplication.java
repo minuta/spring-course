@@ -5,7 +5,6 @@ import com.example.cruddemo.entity.Student;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 
 import java.util.List;
@@ -26,8 +25,20 @@ public class CruddemoApplication {
 
 //			readStudent(studentDAO);
 
-			queryForStudents(studentDAO);
+//			queryForStudents(studentDAO);
+
+			queryForStudentsByLastName(studentDAO);
 		};
+	}
+
+	private void queryForStudentsByLastName(StudentDAO studentDAO) {
+		// find students by lastname
+		String lastName = "Monkey";
+		List<Student> students = studentDAO.findByLastName(lastName);
+		System.out.println("For the student lastname: " + lastName + " found :");
+		for (Student student : students) {
+			System.out.println(student);
+		}
 	}
 
 	private void queryForStudents(StudentDAO studentDAO) {
