@@ -38,5 +38,14 @@ public interface StudentDAO {
      */
     List<Student> findByLastName(String lastName);
 
+    
+    /**
+     * Update an existing student in the database.
+     * This method will replace the existing student record with the new data provided.
+     * 
+     * @param student
+     */
+    void update(Student student);
+
 
 }
