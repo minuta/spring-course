@@ -47,5 +47,18 @@ public interface StudentDAO {
      */
     void update(Student student);
 
+    /**
+     * Delete a student from the database by their ID.
+     *
+     * @param id the ID of the student to delete
+     */
+    void delete(int id);
 
+
+    /**
+     * Delete all students from the database.
+     *
+     * @return the number of deleted students
+     */
+    int deleteAll();
 }
